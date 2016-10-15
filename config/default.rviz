@@ -7,7 +7,9 @@ Panels:
         - /Global Options1
         - /Status1
         - /Map1
-      Splitter Ratio: 0.5
+        - /GridCells1
+        - /GridCells2
+      Splitter Ratio: 0.422343314
     Tree Height: 557
   - Class: rviz/Selection
     Name: Selection
@@ -33,24 +35,6 @@ Panels:
 Visualization Manager:
   Class: ""
   Displays:
-    - Alpha: 0.5
-      Cell Size: 1
-      Class: rviz/Grid
-      Color: 160; 160; 164
-      Enabled: true
-      Line Style:
-        Line Width: 0.0299999993
-        Value: Lines
-      Name: Grid
-      Normal Cell Count: 0
-      Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Plane: XY
-      Plane Cell Count: 10
-      Reference Frame: <Fixed Frame>
-      Value: true
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
@@ -59,6 +43,20 @@ Visualization Manager:
       Name: Map
       Topic: /map
       Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/GridCells
+      Color: 25; 255; 0
+      Enabled: true
+      Name: GridCells
+      Topic: /robot/start
+      Value: true
+    - Alpha: 1
+      Class: rviz/GridCells
+      Color: 255; 25; 0
+      Enabled: true
+      Name: GridCells
+      Topic: /robot/goal
       Value: true
   Enabled: true
   Global Options:
@@ -96,10 +94,10 @@ Visualization Manager:
         Z: 0
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.56479633
+      Pitch: 1.56979632
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.27858925
+      Yaw: 0
     Saved:
       - Class: rviz/Orbit
         Distance: 19.5255184
