@@ -1,0 +1,4 @@
+<launch>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find search)/maps/simple_map.yaml"/> 
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find search)/config/default.rviz"/>  
+</launch>
